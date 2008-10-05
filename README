@@ -5,22 +5,18 @@ software-based reference implementation of the codec specified in the
 JPEG-2000 Part-1 standard (i.e., ISO/IEC 15444-1).
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  libGL1-6.5.2-1
-  libGLU1-6.5.2-1
-  libglut3-2.4.0-1
+  cygwin-1.5.25-15
   libjpeg62-6b-12
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
+  autoconf2.5-2.63-1
   automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.2.11-1
-  gawk-3.1.5-4
+  binutils-20080624-2
+  cygport-0.4.0-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
+  libtool-2.2.6a-1
   make-3.81-1
   sed-4.1.5-2
 
@@ -53,9 +49,7 @@ Files included in the binary packages:
   /usr/bin/imgcmp.exe
   /usr/bin/imginfo.exe
   /usr/bin/jasper.exe
-  /usr/bin/jiv.exe
   /usr/bin/tmrdemo.exe
-  /usr/share/doc/Cygwin/jasper-1.900.1.README
   /usr/share/doc/jasper-1.900.1/COPYRIGHT
   /usr/share/doc/jasper-1.900.1/INSTALL
   /usr/share/doc/jasper-1.900.1/LICENSE
@@ -66,7 +60,6 @@ Files included in the binary packages:
   /usr/share/man/man1/imgcmp.1.gz
   /usr/share/man/man1/imginfo.1.gz
   /usr/share/man/man1/jasper.1.gz
-  /usr/share/man/man1/jiv.1.gz
 
 (libjasper1)
   /usr/bin/cygjasper-1.dll
@@ -98,6 +91,10 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.900.1-3 -----
+Gentoo patch for CVE-2008-3520/3521/3522.
+Removed OpenGL viewer.
 
 ----- version 1.900.1-2 -----
 Patched for CVE-2007-2721.
