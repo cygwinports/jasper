@@ -1,5 +1,5 @@
 category: Graphics
-requires: cygwin libjasper1 libjpeg-devel
+requires: libjasper1 libjpeg-devel
 external-source: jasper
 sdesc: "JPEG-2000 implementation library (development)"
 ldesc: "The JasPer Project is an open-source initiative to provide a free
