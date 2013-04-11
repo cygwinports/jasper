@@ -1,0 +1,35 @@
+NAME="jasper"
+VERSION=1.900.1
+RELEASE=13
+CATEGORY="Graphics"
+SUMMARY="JPEG-2000 codec library"
+DESCRIPTION="The JasPer Project is an open-source initiative to provide a free
+software-based reference implementation of the codec specified in the JPEG-2000
+Part-1 standard (i.e., ISO/IEC 15444-1)."
+HOMEPAGE="http://www.ece.uvic.ca/~mdadams/jasper/"
+SRC_URI="http://www.ece.uvic.ca/~mdadams/jasper/software/${NAME}-${VERSION}.zip"
+PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/patch-libjasper-stepsizes-overflow.diff
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jpc_dec.c.patch
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-CVE-2008-3520.patch
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-CVE-2008-3522.patch
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-CVE-2011-4516-CVE-2011-4517-CERT-VU-887409.patch
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-BAD_SIZEOF.patch
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-CHECKED_RETURN.patch
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-FORWARD_NULL.patch
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-NULL_RETURNS.patch
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-RESOURCE_LEAK.patch
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-UNREACHABLE.patch
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-UNUSED_VALUE.patch
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-pkgconfig.patch
+	1.900.1-no-undefined.patch
+"
+
+PKG_NAMES="jasper libjasper1 libjasper-devel"
+jasper_CONTENTS='usr/bin/*.exe usr/share/'
+libjasper1_CONTENTS="usr/bin/cygjasper-1.dll"
+libjasper_devel_CONTENTS='usr/include/ usr/lib/'
+
+DIFF_EXCLUDES="jas_config.h"
+
+DOCS="doc/jasper.pdf doc/jpeg2000.pdf"
