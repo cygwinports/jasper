@@ -1,6 +1,6 @@
 NAME="jasper"
 VERSION=1.900.1
-RELEASE=13
+RELEASE=14
 CATEGORY="Graphics"
 SUMMARY="JPEG-2000 codec library"
 DESCRIPTION="The JasPer Project is an open-source initiative to provide a free
@@ -22,6 +22,7 @@ PATCH_URI="
 	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-UNREACHABLE.patch
 	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-UNUSED_VALUE.patch
 	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-pkgconfig.patch
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2014-9029.patch
 	1.900.1-no-undefined.patch
 "
 
