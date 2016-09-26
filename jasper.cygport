@@ -1,6 +1,6 @@
 NAME="jasper"
 VERSION=1.900.1
-RELEASE=15
+RELEASE=16
 CATEGORY="Graphics"
 SUMMARY="JPEG-2000 codec library"
 DESCRIPTION="The JasPer Project is an open-source initiative to provide a free
@@ -18,6 +18,12 @@ PATCH_URI="
 	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2014-9029.patch
 	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2014-8137.patch
 	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2014-8138.patch
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2014-8157.patch
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2014-8158.patch
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2015-5221.patch
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2016-1867.patch
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2016-1577.patch
+	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2016-2116.patch
 	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-BAD_SIZEOF.patch
 	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-CHECKED_RETURN.patch
 	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-FORWARD_NULL.patch
