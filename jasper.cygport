@@ -1,36 +1,15 @@
 NAME="jasper"
-VERSION=1.900.1
-RELEASE=16
+VERSION=1.900.22
+RELEASE=1
 CATEGORY="Graphics"
 SUMMARY="JPEG-2000 codec library"
 DESCRIPTION="The JasPer Project is an open-source initiative to provide a free
 software-based reference implementation of the codec specified in the JPEG-2000
 Part-1 standard (i.e., ISO/IEC 15444-1)."
 HOMEPAGE="http://www.ece.uvic.ca/~mdadams/jasper/"
-SRC_URI="http://www.ece.uvic.ca/~mdadams/jasper/software/${NAME}-${VERSION}.zip"
+SRC_URI="http://www.ece.uvic.ca/~mdadams/jasper/software/${NAME}-${VERSION}.tar.gz"
 PATCH_URI="
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/patch-libjasper-stepsizes-overflow.diff
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jpc_dec.c.patch
 	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-CVE-2008-3520.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-CVE-2008-3522.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-pkgconfig.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-CVE-2011-4516-CVE-2011-4517-CERT-VU-887409.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2014-9029.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2014-8137.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2014-8138.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2014-8157.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2014-8158.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2015-5221.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2016-1867.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2016-1577.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-CVE-2016-2116.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-BAD_SIZEOF.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-CHECKED_RETURN.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-FORWARD_NULL.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-NULL_RETURNS.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-RESOURCE_LEAK.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-UNREACHABLE.patch
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-Coverity-UNUSED_VALUE.patch
 	1.900.1-no-undefined.patch
 "
 
