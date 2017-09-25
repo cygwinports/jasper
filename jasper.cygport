@@ -1,7 +1,7 @@
 inherit cmake
 
 NAME="jasper"
-VERSION=2.0.12
+VERSION=2.0.14
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="JPEG-2000 codec library"
@@ -11,7 +11,6 @@ Part-1 standard (i.e., ISO/IEC 15444-1)."
 HOMEPAGE="http://www.ece.uvic.ca/~mdadams/jasper/"
 SRC_URI="http://www.ece.uvic.ca/~mdadams/jasper/software/${NAME}-${VERSION}.tar.gz"
 PATCH_URI="
-	http://pkgs.fedoraproject.org/cgit/jasper.git/plain/jasper-1.900.1-CVE-2008-3520.patch
 	2.0.12-implicit-decls.patch
 "
 
